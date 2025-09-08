@@ -10,7 +10,7 @@ const userRoutes = require ("./Routes/userRouter")
 //middlewares
 app.use(express.json())
 app.use(cors({
-    origin:"https://product-cart-list-pi.vercel.app/",
+    origin:"https://product-cart-list-pi.vercel.app",
     credentials: true
 }))
 
