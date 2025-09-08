@@ -9,7 +9,10 @@ const cors = require("cors")
 const userRoutes = require ("./Routes/userRouter")
 //middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin:"https://product-cart-list-pi.vercel.app/",
+    credentials: true
+}))
 
 app.get("/", (req,res)=> {
     res.send("server is running")
